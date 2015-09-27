@@ -20,14 +20,14 @@ public class GeomentricMean {
 			stock = (StockData) stockDetail.getValue();
 			price = price * stock.getPrice();
 			count = count + 1;
-			System.out.println("price" + stock.getPrice());
+			//System.out.println("price" + stock.getPrice());
 		}
 		float power=1/count;
-		System.out.println("hi"+power);
+		//System.out.println("hi"+power);
 		double gm = Math.pow(price,power);
 		
-		System.out.println("price" + price);
-		System.out.println(count);
+		//System.out.println("price" + price);
+		//System.out.println(count);
 		return gm;
 	}
 }

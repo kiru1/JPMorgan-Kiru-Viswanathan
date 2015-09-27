@@ -27,8 +27,8 @@ public class VolumeWeightedStock {
 			stock = (TradeStock) trade.getValue();
 			System.out.println(stock.getTradeRef() + stock.getTimestamp());
 			if (stock.getTimestamp().after(vwstk_cutoff)) {
-				System.out.println("includer" + stock.getTradeRef()
-						+ stock.getTimestamp());
+				//System.out.println("includer" + stock.getTradeRef()
+						//+ stock.getTimestamp());
 				tq_sum = tq_sum + (stock.getPrice() * stock.getQuantity());
 				qty_sum = qty_sum + stock.getQuantity();
 			}

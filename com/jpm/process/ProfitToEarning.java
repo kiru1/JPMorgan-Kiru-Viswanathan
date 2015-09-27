@@ -8,7 +8,8 @@ public class ProfitToEarning {
 		float ratio = 0;
 		DataManipulator dataManipulator = new DataManipulator();
 		StockData stockData = dataManipulator.stockCollection.get(stock_symbol);
-		ratio = stockData.getLastDividend() / price;
+		ratio =price/stockData.getLastDividend();
+		//System.out.println(ratio);
 		return ratio;
 
 	}

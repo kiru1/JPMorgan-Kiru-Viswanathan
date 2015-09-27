@@ -8,7 +8,7 @@ import com.jpm.process.StockProcess;
 public class CreateStockTest {
 
 	public void createStock() {
-		System.out.println("hi");
+		//System.out.println("hi");
 		String stock_symbol = "google";
 		String type = "PREFERRED";
 		int last_dividend = 10;

@@ -16,7 +16,9 @@ public class DividendYieldTest {
 		float expected_result=(float) 1.0;
 		CreateStockTest createStockTest = new CreateStockTest();
 		createStockTest.createStock();
-		DividendYield dividendYield = new DividendYield();		
+		DividendYield dividendYield = new DividendYield();	
+		float result=dividendYield.calculate(stock_symbol, price);
+		System.out.println("dividendYield"+" "+result);
 		if(dividendYield.calculate(stock_symbol, price) == expected_result)
 		{
 		assert true;
